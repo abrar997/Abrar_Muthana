@@ -6,14 +6,17 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 const App = () => {
   return (
-    <section className="app">
-      <div className="container mt-3" style={{boxShadow:"1px 1px 17px gray"}}>
+    <section className="conatiner app">
+      <div
+        className="container mt-3"
+        style={{ boxShadow: "1px 1px 17px gray" }}
+      >
         <Navbars />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Home" element={<Home />} />
         </Routes>
-<Footer />
+        <Footer />
       </div>
     </section>
   );

@@ -8,10 +8,8 @@ import "./Home.css";
 import {
   Download,
   Email,
-  Facebook,
   Instagram,
   LinkedIn,
-  Twitter,
   WhatsApp,
 } from "@mui/icons-material";
 import { Typography } from "@mui/material";
@@ -44,7 +42,7 @@ const Try = () => {
                 </Typography>
                 <Typography variant="subtitle2" className="text-capitalize text-center">
                   {" "}
-                  develop website from zero by react js{" "}
+                  developing websites by react js with the latest  versions 
                 </Typography>
                 <Item className="text-center d-flex align-items-center mt-3 justify-content-center  ps-2">
                   <a href="mailto:abrprogramming@gmail.com">
@@ -56,12 +54,7 @@ const Try = () => {
                   <a href="/">
                     <Instagram />
                   </a>
-                  <a href="/">
-                    <Facebook />
-                  </a>
-                  <a href="/">
-                    <Twitter />
-                  </a>
+          
                   <a  href="https://wa.me/+9647831190254">
                     <WhatsApp />
                   </a>

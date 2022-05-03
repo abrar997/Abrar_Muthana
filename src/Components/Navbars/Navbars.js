@@ -13,6 +13,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ListItem from "@mui/material/ListItem";
 import { Link } from "react-router-dom";
 import DragHandleTwoToneIcon from "@mui/icons-material/DragHandleTwoTone";
+import { Container } from "@mui/material";
 
 const drawerWidth = 170;
 const AppBar = styled(MuiAppBar, {
@@ -72,42 +73,48 @@ const Navbars = () => {
   };
 
   return (
-    <div className=" container">
+    <>
       <Box sx={{ display: "flex" }}>
-        <CssBaseline />
-        <AppBar
-          position="fixed"
-          open={open}
-          style={{
-            background: colorNav,
-            height: sizeNav,
-            boxShadow: shadowNav,
-          }}
-        >
-          <Toolbar>
-            <Typography
-              variant="h6"
-              className=" text-danger ms-5 fw-bold "
-              noWrap
-              sx={{ flexGrow: 1 }}
-              component="div"
-            >
-              Code/Mu.
-            </Typography>
-            <IconButton
-              color="inherit"
-              aria-label="open drawer"
-              edge="end"
-              onClick={handleDrawerOpen}
-              sx={{ ...(open && { display: "none" }) }}
-            >
-              <MenuIcon
-                className="text-danger  fs-3"
-                style={{ marginRight: "40px" }}
-              />
-            </IconButton>
-          </Toolbar>
-        </AppBar>
+        <Container>
+          <CssBaseline />
+          <AppBar
+            // position="fixed"
+            open={open}
+            style={{
+              background: colorNav,
+              height: sizeNav,
+              boxShadow: shadowNav,
+            }}
+          >
+            <Toolbar>
+              <Typography
+                variant="subtitle"
+                noWrap
+                sx={{ flexGrow: 1 }}
+                component="div"
+                style={{width:"40px",height:"80px"}}
+                className='p-4 mt-5 ms-4'
+              
+              >
+                <span className=" text-light p-4 rounded-circle bg-primary ">
+                  Code/Mu.{" "}
+                </span>
+              </Typography>
+              <IconButton
+                color="inherit"
+                aria-label="open drawer"
+                edge="end"
+                onClick={handleDrawerOpen}
+                sx={{ ...(open && { display: "none" }) }}
+              >
+                <MenuIcon
+                  className="text-primary me-5 mt-3 fs-4 "
+                  // style={{ marginRight: "40px" }}
+                />
+              </IconButton>
+            </Toolbar>
+          </AppBar>
+        </Container>
         <Drawer
           sx={{
             width: drawerWidth,
@@ -139,7 +146,7 @@ const Navbars = () => {
           {/* <Divider /> */}
         </Drawer>
       </Box>
-    </div>
+    </>
   );
 };
 

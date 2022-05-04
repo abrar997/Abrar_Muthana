@@ -1,0 +1,43 @@
+.SkilExper {
+  overflow: scroll;
+  height: 400px;
+  overflow-x: hidden;
+}
+.SkilExper .right-skillEx h1 {
+  font-weight: 600;
+  text-shadow: 2px 3px 4px gray;
+}
+
+.right-skillEx {
+  border-left: 13px solid;
+  border-color: #dc3545;
+  border-radius: 20px;
+}
+
+.right-skillEx ul {
+  list-style-type: none;
+}
+.right-skillEx ul li::before {
+  content: "*";
+  font-weight: 600;
+  margin-right: 5px;
+  font-size: 20px;
+  color: #dc3545;
+}
+
+/* body {
+  overflow: hidden;
+} */
+
+.SkilExper::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+.SkilExper::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+.SkilExper::-webkit-scrollbar-thumb {
+  background-color: #dc3545; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}

@@ -14,8 +14,9 @@ import ListItem from "@mui/material/ListItem";
 import { Link } from "react-router-dom";
 import DragHandleTwoToneIcon from "@mui/icons-material/DragHandleTwoTone";
 import { Container } from "@mui/material";
+import { Code, Info, Work } from "@mui/icons-material";
 
-const drawerWidth = 170;
+const drawerWidth = 220;
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
 })(({ theme, open }) => ({
@@ -41,7 +42,9 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: "flex-start",
 }));
-
+const DrawerNav = {
+  background: "transparent",
+};
 const Navbars = () => {
   const [colorNav, setColorNav] = useState("transparent ");
   const [sizeNav, setSizeNav] = useState("60px");
@@ -92,9 +95,8 @@ const Navbars = () => {
                 noWrap
                 sx={{ flexGrow: 1 }}
                 component="div"
-                style={{width:"40px",height:"80px"}}
-                className='p-4 mt-5 ms-4'
-              
+                style={{ width: "40px", height: "80px" }}
+                className="p-4 mt-5 ms-4"
               >
                 <span className=" text-light p-4 rounded-circle bg-primary ">
                   Code/Mu.{" "}
@@ -132,14 +134,24 @@ const Navbars = () => {
               {theme.direction === "rtl" ? (
                 <ChevronLeftIcon />
               ) : (
-                <DragHandleTwoToneIcon className="text-danger " />
+                <DragHandleTwoToneIcon className="text-dark " />
               )}
             </IconButton>
           </DrawerHeader>
-          <List>
-            <ListItem className="border-bottom">
-              <Link className="text-center text-secondary  fs-5  " to="Home">
-                Home
+          <List style={{fontSize:"13px"}}>
+            <ListItem >
+              <Link className="text-center  text-decoration-none" to="Home">
+                <Info className="text-danger me-2" style={{fontSize:"19px"}} /> Home
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link className=" text-decoration-none  " to="SkilExper">
+                <Code className="text-danger me-2" style={{fontSize:"19px"}} /> Skills and Experince
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link className="text-center  text-decoration-none " to="Home">
+                <Work  className="text-danger me-2" style={{fontSize:"19px"}}/> projectsc
               </Link>
             </ListItem>
           </List>

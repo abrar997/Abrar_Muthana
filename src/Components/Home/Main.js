@@ -15,10 +15,7 @@ const Home = () => {
   return (
     <section className="home pb-4">
       <Box sx={{ flexGrow: 1 }} className="mt-3 pt-5">
-        <div
-          className="container 
-        "
-        >
+        <div className="container">
           <Grid container spacing={2}>
             <Grid item xs={6}>
               <Item className="shadow-none ms-5 border-none ">

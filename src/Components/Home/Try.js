@@ -9,7 +9,7 @@ import Grid from "@mui/material/Grid";
 import { Typography } from "@mui/material";
 // icon
 import {
-  AddLocation,
+  // AddLocation,
   Download,
   Email,
   Instagram,
@@ -63,7 +63,7 @@ const Try = () => {
                   developing websites by react js with the latest versions
                 </Typography>
 
-                <Item className="text-center d-flex align-items-center mt-3 justify-content-center  ps-2">
+                <Item className="text-center  d-flex align-items-center mt-3 justify-content-center  ps-2">
                   <a href="mailto:abrprogramming@gmail.com">
                     <Email />
                   </a>
@@ -87,9 +87,9 @@ const Try = () => {
                   > <Download />
                   </button>
                 </Item>
-                <p className="text-center mt-2 text-danger">
+                {/* <p className="text-center mt-2 text-danger">
                   <AddLocation /> Iraq_Erbil
-                </p>
+                </p> */}
               </Item>
             </Grid>
           </Grid>

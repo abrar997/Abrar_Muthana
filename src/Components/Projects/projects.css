@@ -1,0 +1,39 @@
+.work {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 400px;
+}
+h1 {
+  text-shadow: 2px 3px 4px gray;
+  /* border-left: 15px solid #dc3545;
+  border-right: 15px solid #dc3545;
+  border-radius: 40px; */
+}
+
+.text {
+  text-shadow: 2px 1px 2px gray;
+}
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.curve {
+  transform: rotate(-86deg);
+  margin-top: 80px;
+}
+
+.card-image {
+  overflow: hidden;
+}
+.card-image img {
+  transition: all 1s ease-in-out;
+}
+.card-image img:hover {
+  transform: scale(1.5);
+  transition: all 1s ease-in-out;
+  filter: contrast(120%);
+}

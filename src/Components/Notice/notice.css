@@ -1,0 +1,16 @@
+h5 {
+  text-shadow: 2px 3px 3px gray;
+  text-transform: capitalize;
+}
+form input[type='text'] {
+border: 1px solid #eee;  
+
+}
+
+::placeholder{
+    font-size: 14px;
+}
+form {
+  display: flex;
+  flex-flow: column;
+}

@@ -21,14 +21,14 @@ const Navbars2 = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse " id="navbarNav">
-            <ul className="navbar-nav fw-bold text-dark ">
+            <ul className="navbar-nav text-capitalize fw-bold text-dark text-transform-capitalize ">
               <li className="nav-item ">
-                <Link className="nav-link a`ctive  " to="/Home">
+                <Link className="nav-link  text-transform-capitalize  " to="/Home">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/SkilExper">
+                <Link className="nav-link  " to="/SkilExper">
                   skills and Experince
                 </Link>
               </li>

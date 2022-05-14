@@ -11,8 +11,9 @@ import Notice from './Components/Notice/Notice'
 
 const App = () => {
   return (
+    <div className='d-flex align-items-center justify-content-center'>
     <section className="app">
-      <div className="container mt-4 p-2 P-5 mt-5">
+      <div className="container P-5 mt-5">
         <Navbars2 />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,6 +27,8 @@ const App = () => {
 
         <Footer />
     </section>
+    <div ></div>
+    </div>
   );
 };
 

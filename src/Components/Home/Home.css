@@ -1,11 +1,20 @@
+.text {
+  font-family: Helvetica, Geneva, sans-serif; /* Any font would work, but SansSerif looks better */
+}
+.text:focus {
+  outline: none;
+}
+.text span {
+  vertical-align: middle;
+  line-height: 1.5em;
+  transition: font-size 2s cubic-bezier(0, 1, 0, 1);
+}
 /* // Small devices (landscape phones, 576px and up) */
 @media all and (min-width: 0px) and (max-width: 576px) {
   .try .image-grid {
     display: none !important;
   }
-  .try {
-    width: 100%;
-  }
+
   span {
   text-shadow: 2px 3px 4px gray !important;
 }
@@ -13,7 +22,6 @@
     /* width:999px !important; */
     margin: auto;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.925);
   }
   /* hello */
   .css-5lbw0b-MuiTypography-root {
@@ -46,17 +54,6 @@
 }
 
 
-.text {
-  font-family: Helvetica, Geneva, sans-serif; /* Any font would work, but SansSerif looks better */
-}
-.text:focus {
-  outline: none;
-}
-.text span {
-  vertical-align: middle;
-  line-height: 1.5em;
-  transition: font-size 2s cubic-bezier(0, 1, 0, 1);
-}
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 }

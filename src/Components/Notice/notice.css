@@ -8,9 +8,14 @@ border: 1px solid #eee;
 }
 
 ::placeholder{
-    font-size: 14px;
+    font-size: 12px;
 }
 form {
   display: flex;
   flex-flow: column;
+
+}
+
+.notice p{
+  font-size: 10px;
 }
